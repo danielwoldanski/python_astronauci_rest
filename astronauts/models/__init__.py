@@ -1,0 +1,2 @@
+from .astronaut import Astronaut
+

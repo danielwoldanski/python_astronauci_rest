@@ -1,0 +1,19 @@
+
+<div style="width:500px; margin-left:auto; margin-right:auto; text-align:center; margin-top:10px;">
+
+    <span style="font-size:20px; color:red;"><b> daniel.woldanski@op.pl </b></span> </br>
+{% for astronaut in astronauts %}
+
+    <p>
+
+    <div style="width:30px;height:30px;text-align:center;margin-left:auto;margin-right:auto;background-color: #bbb;border-radius: 50%;display: inline-block;">
+        <span style="font-size:25px;"><b>{{ astronaut.id }}</b></span></div></br>
+        <b>Imię:  <span style="color:navy;">{{ astronaut.first_name }}</span></br></b>
+        <b>Nazwisko: <span style="color:blue;">{{ astronaut.last_name }} </span></br></b>
+        <b>Data urodzenia: <span style="color:green;">{{ astronaut.date_of_birth|date:"d.m.Y" }}</span></b>
+
+    </p>
+
+{% endfor %}
+
+</div>
